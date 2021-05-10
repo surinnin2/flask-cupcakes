@@ -1,0 +1,52 @@
+<Doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Homepage{</title>
+  <meta name="description" content="Cupcakes">
+  <meta name="author" content="thisenemy">
+
+  <link rel="stylesheet" href='/static/style.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <h3>Cupcakes</h3>
+
+  <div class="container">
+  </div>
+  <button class="btn btn-primary" id="new-cupcake-btn">New Cupcake</button>
+</br>
+<hr>
+</br>
+
+<form class="cupcake-form" method="POST">
+  <div class="form-group">
+    <label for="flavor">Flavor</label>
+    <input type="text" class="form-control" id="flavor" placeholder="cupcake flavor">
+  </div>
+  <div class="form-group">
+    <label for="size">Size</label>
+    <input type="text" class="form-control" id="size" placeholder="cupcake size">
+  </div>
+  <div class="form-group">
+    <label for="rating">Rating (0-5)</label>
+    <input type="range" min="0" max="5" class="form-control-range" id="rating">
+  </div>
+  <div class="form-group">
+    <label for="image">Image</label>
+    <input type="text" class="form-control" id="image" placeholder="cupcake image URL">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+</div>
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
